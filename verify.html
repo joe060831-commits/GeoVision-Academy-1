@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verify a Certificate — GeoVision Academy</title>
+<meta name="description" content="Verify the authenticity of a GeoVision Academy certificate using its unique certificate ID.">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&amp;family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo.svg" alt="GeoVision Academy logo">
+      <span class="brand-text"><strong>GeoVision</strong><span>Academy</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="verify.html" class="active">Verify Certificate</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="courses.html" class="btn btn-outline btn-sm">Explore Courses</a>
+      <a href="index.html#waitlist" class="btn btn-primary btn-sm">Join Waitlist</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="container">
+    <span class="eyebrow">Credential Verification</span>
+    <h1 style="font-size:clamp(2.2rem,4vw,3.2rem); margin-top:14px;">Verify a certificate</h1>
+    <p class="lede" style="margin-top:14px;">Enter a GeoVision Academy certificate ID below to confirm it was genuinely issued and view the learner's program details.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid grid-2" style="align-items:flex-start;">
+    <div data-reveal>
+      <div class="form-card">
+        <h3 style="margin-bottom:18px;">Certificate lookup</h3>
+        <form data-verify-form>
+          <div class="field">
+            <label for="cert-id">Certificate ID</label>
+            <input id="cert-id" name="cert-id" type="text" placeholder="e.g. GVA-GIS-0001" required>
+            <span class="field-hint">Try the sample ID: <strong style="font-family:var(--font-mono);">GVA-GIS-0001</strong></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Verify Certificate</button>
+        </form>
+
+        <div class="result-box result-valid hidden" data-result-valid style="margin-top:24px; margin-bottom:0;">
+          <div class="result-icon">✓</div>
+          <div>
+            <h4>Certificate verified</h4>
+            <p>This certificate was genuinely issued by GeoVision Academy. Details are shown alongside.</p>
+          </div>
+        </div>
+        <div class="result-box result-invalid hidden" data-result-invalid style="margin-top:24px; margin-bottom:0;">
+          <div class="result-icon">!</div>
+          <div>
+            <h4>Certificate not found</h4>
+            <p>We couldn't match that ID to a certificate on file. Double-check the ID and try again.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-reveal>
+      <div class="cert hidden" data-cert-preview>
+        <img class="cert-watermark" src="assets/img/logo.svg" alt="">
+        <div class="cert-head">
+          <span class="brand-text"><strong>GeoVision</strong><span>Academy</span></span>
+          <div class="cert-seal">VERIFIED<br>SEAL</div>
+        </div>
+        <div class="cert-body">
+          <span class="cert-label">Certificate of Completion</span>
+          <p class="cert-name" data-cert-name-out>John Doe</p>
+          <p class="cert-course" data-cert-course-out>Introduction to GIS</p>
+        </div>
+        <div class="cert-foot">
+          <span>Issued <span data-cert-issued-out>May 2026</span></span>
+          <span class="id">ID: <span data-cert-id-out>GVA-GIS-0001</span></span>
+        </div>
+      </div>
+      <button class="btn btn-outline btn-block hidden" data-cert-download style="margin-top:16px;">Download / Print Certificate</button>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container center" style="max-width:640px; margin:0 auto;" data-reveal>
+    <span class="eyebrow">For Employers &amp; Institutions</span>
+    <h2 style="margin-top:10px;">Why verification matters</h2>
+    <p class="lede" style="margin:14px auto 0;">Every certificate issued by GeoVision Academy carries a unique ID tied to a real, completed program — giving employers and academic partners a fast, reliable way to confirm a credential before making a decision.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/img/logo.svg" alt="GeoVision Academy logo">
+          <span class="brand-text"><strong>GeoVision</strong><span>Academy</span></span>
+        </a>
+        <p>"Mapping Knowledge, Shaping Futures" — an online academy for GIS, Geology, AI, and Digital Skills education across Africa.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="courses.html">Courses</a>
+        <a href="verify.html">Verify a Certificate</a>
+        <a href="about.html">About Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <a href="courses.html">Introduction to GIS</a>
+        <a href="courses.html">Basic Geology</a>
+        <a href="courses.html">AI for Students</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="mailto:hello@geovisionacademy.com">hello@geovisionacademy.com</a>
+        <a href="index.html#waitlist">Join the Waitlist</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> GeoVision Academy. All rights reserved.</span>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="X (Twitter)">X</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

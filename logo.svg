@@ -1,0 +1,26 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GeoVision Academy logo">
+  <defs>
+    <clipPath id="globeClip">
+      <circle cx="50" cy="50" r="42"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="50" cy="50" r="42" fill="#F6F8F7" stroke="#0E2A47" stroke-width="2.5"/>
+
+  <g clip-path="url(#globeClip)" stroke="#1C6FA5" stroke-width="1" fill="none" opacity="0.5">
+    <ellipse cx="50" cy="50" rx="42" ry="13"/>
+    <ellipse cx="50" cy="50" rx="42" ry="26"/>
+    <ellipse cx="50" cy="50" rx="13" ry="42"/>
+    <ellipse cx="50" cy="50" rx="26" ry="42"/>
+    <line x1="8" y1="50" x2="92" y2="50"/>
+    <line x1="50" y1="8" x2="50" y2="92"/>
+  </g>
+
+  <g clip-path="url(#globeClip)">
+    <path d="M3 80 L33 39 L45 59 L57 29 L97 80 Z" fill="#1F7A5C"/>
+    <path d="M57 29 L70 51 L83 51 L97 80 L57 80 Z" fill="#2FA876" opacity="0.88"/>
+  </g>
+
+  <circle cx="58" cy="28" r="3.1" fill="#2FA876" stroke="#0E2A47" stroke-width="1"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#0E2A47" stroke-width="2.5"/>
+</svg>
